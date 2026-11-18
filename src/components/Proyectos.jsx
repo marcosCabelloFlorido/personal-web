@@ -1,6 +1,6 @@
 import { PROYECTOS } from '../data.js'
 
-const SHOTS = ['/apps/facturacion.png', '/apps/valtasy.png']
+const SHOTS = ['/apps/facturacion.png', '/apps/valtasy.png', '/apps/doucecreative.png']
 
 function host(url) {
   return new URL(url).host
@@ -13,8 +13,9 @@ export default function Proyectos() {
         <header className="section-head section-head-wide">
           <h2 className="section-title">Mis proyectos</h2>
           <p className="section-intro">
-            Dos aplicaciones en producción: una para facturar y otra para
-            gestionar equipos. Ambas con código abierto en GitHub.
+            Tres aplicaciones en producción: una para facturar, otra para
+            gestionar equipos y otra para reservar citas. Todas con código
+            abierto en GitHub.
           </p>
         </header>
 
@@ -47,9 +48,14 @@ export default function Proyectos() {
                 <h3 className="project-name">{p.name}</h3>
                 <p className="project-desc">{p.desc}</p>
                 <div className="project-links">
-                  <a className="link-plain" href={p.repo} target="_blank" rel="noreferrer">
-                    Código en GitHub
+                  <a className="link-plain" href={p.demo} target="_blank" rel="noreferrer">
+                    Ver demo
                   </a>
+                  {p.repo && (
+                    <a className="link-plain" href={p.repo} target="_blank" rel="noreferrer">
+                      Código en GitHub
+                    </a>
+                  )}
                 </div>
               </div>
             </article>

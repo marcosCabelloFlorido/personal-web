@@ -53,6 +53,14 @@ export const PROYECTOS = [
     demo: 'https://valtasy.infinityfreeapp.com/',
     repo: 'https://github.com/marcosCabelloFlorido/Grupo4',
   },
+  {
+    name: 'DouceCreative',
+    kind: 'Reservas · Full-stack',
+    desc: 'Aplicación de reserva de citas para un negocio creativo: el cliente pide cita en menos de un minuto y consulta después sus citas desde la misma web.',
+    tags: ['Reservas', 'Citas', 'Cloudflare Workers'],
+    demo: 'https://doucecreative.douce-cr.workers.dev/',
+    repo: 'https://github.com/marcosCabelloFlorido/peluqueria',
+  },
 ]
 
 export const STACK = [
